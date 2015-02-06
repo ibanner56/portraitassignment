@@ -1,0 +1,69 @@
+body {
+    background-color: #eeeeff;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.images {
+    padding: 0px 0px 20px 0px;
+    margin: 0 auto;
+    width: 404px;
+}
+
+.isaac {
+    width: 200px;
+    height: 200px;
+    background: url(../img/wirt.jpg) 200px 200px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.isaac:hover {
+    cursor: pointer;
+    background: url(../img/isaac.gif) -50px 0px;
+    background-size: cover;
+}
+
+.mimi {
+    width: 200px;
+    height: 200px;
+    background: url(../img/beatrice.jpg) -50px 0px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.mimi:hover {
+    cursor: pointer;
+    background: url(../img/mimi.gif) -80px 0px;
+    background-size: cover;
+}
+
+.animate-enter,
+.animate-leave
+{
+    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+}
+
+.animate-enter.animate-enter-active,
+.animate-leave {
+    opacity: 1;
+    top: 0;
+    height: 30px;
+}
+
+.animate-leave.animate-leave-active,
+.animate-enter {
+    opacity: 0;
+    top: -50px;
+    height: 0px;
+}

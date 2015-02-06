@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="portraitPage">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script type="text/javascript" src="script/angular.min.js"></script>
+    <script type="text/javascript" src="script/portrait.js"></script>
+</head>
+<body ng-controller="PortraitController">
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="text-center">Isaac • Dionna • Vic • Mimi</h2>
+            <h3 class="text-center">A Portrait</h3>
+        </div>
+
+        <div class="images">
+            <div class="isaac" ng-click="set(0)"></div>
+            <div class="mimi" ng-click="set(1)"></div>
+            <div class="mimi" ng-click="set(2)"></div>
+            <div class="isaac" ng-click="set(3)"></div>
+        </div>
+
+        <div class="bio" ng-repeat="bio in bios" >
+            <div class="well" ng-hide="show($index)" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}">
+                <h4>{{bio.name}}</h4>
+                <p>{{bio.bio}}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

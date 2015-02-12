@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <script type="text/javascript" src="script/angular.min.js"></script>
+    <script type="text/javascript" src="script/angular-animate.min.js"></script>
     <script type="text/javascript" src="script/portrait.js"></script>
 </head>
 <body ng-controller="PortraitController">
@@ -24,7 +25,7 @@
         </div>
 
         <div class="bio" ng-repeat="bio in bios" >
-            <div class="well" ng-hide="show($index)" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}">
+            <div class="well slidein slideout" ng-hide="show($index)">
                 <h4>{{bio.name}}</h4>
                 <p>{{bio.bio}}</p>
             </div>

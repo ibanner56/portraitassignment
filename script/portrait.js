@@ -5,7 +5,7 @@
 "use strict";
 
 (function() {
-    var app = angular.module('portraitPage', []);
+    var app = angular.module('portraitPage', ['ngAnimate']);
     app.controller('PortraitController', ['$scope', '$http', function($scope, $http) {
         $scope.bios = [];
         $scope.activeBio = 0;

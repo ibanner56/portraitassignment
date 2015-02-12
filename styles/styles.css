@@ -1,5 +1,5 @@
 body {
-    background-color: #eeeeff;
+    background-color: #000;
 }
 
 .container {
@@ -53,6 +53,10 @@ body {
     position: relative;
     display: block;
     margin-top: 30px;
+    color: #fff;
+    width: 60%;
+    margin: 50px auto;
+    text-align: justify;
 }
 
 .slidein.ng-hide-remove.ng-hide-remove-active {

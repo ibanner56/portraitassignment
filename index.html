@@ -11,21 +11,24 @@
     <script type="text/javascript" src="script/portrait.js"></script>
 </head>
 <body ng-controller="PortraitController">
-    <div class="container">
-        <div class="jumbotron">
-            <h2 class="text-center">Isaac • Dionna • Vic • Mimi</h2>
-            <h3 class="text-center">A Portrait</h3>
-        </div>
+    <div class="header">
+        <img class="headerImg" src="img/portrait.jpg">
+    </div>
 
-        <div class="images">
-            <div class="isaac" ng-click="set(0)"></div>
-            <div class="mimi" ng-click="set(1)"></div>
-            <div class="mimi" ng-click="set(2)"></div>
-            <div class="isaac" ng-click="set(3)"></div>
+    <div class="container">
+        <div class="images" ng-show="showImg(0)">
+            <div class="quarter vic" ng-click="set(1)"></div>
+            <div class="quarter mimi" ng-click="set(2)"></div>
+            <div class="quarter dee" ng-click="set(3)"></div>
+            <div class="quarter isaac" ng-click="set(4)"></div>
         </div>
+        <div class="big bigVic" ng-show="showImg(1)"></div>
+        <div class="big bigMimi" ng-show="showImg(2)"></div>
+        <div class="big bigDee" ng-show="showImg(3)"></div>
+        <div class="big bigIsaac" ng-show="showImg(4)"></div>
 
         <div class="bio" ng-repeat="bio in bios" >
-            <div class="slidein slideout" ng-hide="show($index)">
+            <div class="slidein slideout" ng-show="showBio($index)">
                 <h4>{{bio.name}}</h4>
                 <p>{{bio.bio}}</p>
             </div>

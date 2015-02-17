@@ -2,45 +2,97 @@ body {
     background-color: #000;
 }
 
+.header {
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.headerImg {
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
 .container {
     padding-top: 20px;
 }
 
 .images {
+    font-size: 0;
     padding: 0px 0px 20px 0px;
     margin: 0 auto;
-    width: 404px;
+    width: 600px;
 }
 
-.isaac {
-    width: 200px;
-    height: 200px;
-    background: url(../img/wirt.jpg) 200px 200px;
+/* Image Styles */
+
+.quarter {
+    width: 300px;
+    height: 300px;
     display: inline-block;
     position: relative;
     z-index: 1;
+    background-size: cover !important;
+}
+
+.quarter:hover {
+    cursor: pointer;
+}
+
+.big {
+    width: 600px;
+    height: 600px;
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+}
+
+/* Isaac's stuff */
+
+.isaac {
+    background: url(../img/wirt.jpg);
 }
 
 .isaac:hover {
-    cursor: pointer;
-    background: url(../img/isaac.gif) -50px 0px;
-    background-size: cover;
+    background: url(../img/isaac.gif) -145px 0px;
 }
 
+.bigIsaac {
+    background: url(../img/isaac.gif) -350px;
+}
+
+/* Mimi's stuff */
+
 .mimi {
-    width: 200px;
-    height: 200px;
     background: url(../img/beatrice.jpg) -50px 0px;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
 }
 
 .mimi:hover {
-    cursor: pointer;
     background: url(../img/mimi.gif) -80px 0px;
-    background-size: cover;
 }
+
+.bigMimi {
+    background: url(../img/mimi.gif) -200px;
+}
+
+/* Dionna's Stuff */
+
+.dee {
+    background: url(../img/beatrice.jpg) -50px 0px;
+}
+
+.dee:hover {
+    background: url(../img/dionna.gif) -175px 0px;
+}
+
+.bigDee {
+    background: url(../img/dionna.gif) -175px;
+}
+
+/* Animation styles */
 
 .slidein,
 .slideout

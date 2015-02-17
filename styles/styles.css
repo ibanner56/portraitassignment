@@ -67,7 +67,7 @@ body {
 /* Mimi's stuff */
 
 .mimi {
-    background: url(../img/beatrice.jpg) -50px 0px;
+    background: url(../img/mimi_still.png) -50px 0px;
 }
 
 .mimi:hover {
@@ -81,11 +81,11 @@ body {
 /* Dionna's Stuff */
 
 .dee {
-    background: url(../img/dionna_still.png) -175px 0px;
+    background: url(../img/dionna_still.png) -90px 0px;
 }
 
 .dee:hover {
-    background: url(../img/dionna.gif) -175px 0px;
+    background: url(../img/dionna.gif) -90px 0px;
 }
 
 .bigDee {

@@ -53,7 +53,7 @@ body {
 /* Isaac's stuff */
 
 .isaac {
-    background: url(../img/wirt.jpg);
+    background: url(../img/isaac_still.png);
 }
 
 .isaac:hover {
@@ -81,7 +81,7 @@ body {
 /* Dionna's Stuff */
 
 .dee {
-    background: url(../img/beatrice.jpg) -50px 0px;
+    background: url(../img/dionna_still.png) -50px 0px;
 }
 
 .dee:hover {
@@ -90,6 +90,20 @@ body {
 
 .bigDee {
     background: url(../img/dionna.gif) -175px;
+}
+
+/* Vic's Stuff */
+
+.dee {
+    background: url(../img/wirt.jpg) -50px 0px;
+}
+
+.dee:hover {
+    background: url(../img/vic.gif) -175px 0px;
+}
+
+.bigDee {
+    background: url(../img/vic.gif) -175px;
 }
 
 /* Animation styles */
